@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+<h1>Hotel Search</h1>
+City<br>
+<form action="/results">
+<select name="city"><option value="Dallas">Dallas</option>
+					<option value="Las Vegas">Las Vegas</option>
+					<option value="Detroit">Detroit</option>
+					<option value="Vancouver">Vancouver</option>
+</select>
+<input type="submit" value="Go!"></form>
+</body>
+</html>

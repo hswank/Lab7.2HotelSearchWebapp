@@ -1,0 +1,21 @@
+package GC.Lab72;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HomeController {
+	@Autowired
+	private HotelRepository repo;
+	
+	@RequestMapping("/")
+	public String index() {
+		return "home";
+	}
+	
+	@RequestMapping("/results")
+	public String results() {
+		return "results";
+	}
+}
